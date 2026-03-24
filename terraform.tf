@@ -6,6 +6,14 @@ terraform {
         version = "~> 6.0"
     }
   }
+
+cloud {
+    organization = "devops_terraform2"
+    workspaces {
+      name = "devops_terraform2"
+    }
+  }
+
 }
 
 provider "aws" {
